@@ -1,0 +1,1 @@
+this folder contains ancillary data such as lookup tables. The indentifying data table contains information about the detector id number ('channelID') as well as the following parameters: columnID,scintillatorType,PosZ,PosX,PosY,biasID,asicID,pinID
