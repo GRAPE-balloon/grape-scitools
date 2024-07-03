@@ -95,7 +95,7 @@ def convert_raw_data(run_id, directory='../data/raw/', output_format=None, input
 
 # The process_raw_data_directory function iterates through the .ldat files in a specified directory. For each file, it extracts the run ID, invokes the convert_raw_data function to process the binary file into a structured DataFrame, and saves it in the desired output format.
 
-def process_raw_data_directory(directory='../data/raw/', output_format='.feather'):
+def process_raw_data_directory(directory='../data/raw/', output_format='.feather', input_format='.ldat'):
     """
         Processes raw data files from the specified directory. For each file, it extracts the run ID, invokes the convert_raw_data function to process the binary file into a structured DataFrame, and saves it in the desired output format.
 
@@ -118,7 +118,7 @@ def process_raw_data_directory(directory='../data/raw/', output_format='.feather
 
         print(run_id)
 
-        convert_raw_data(run_id, directory=directory, output_format=output_format)
+        convert_raw_data(run_id, directory=directory, output_format=output_format, input_format=input_format)
 
     return
 
